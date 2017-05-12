@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Plugin Name: NG Colour Code Post Status
  * Plugin URI: https://www.nosegraze.com
  * Description: Colour codes posts based on their statuses.
