@@ -7,10 +7,10 @@
  * Author: Nose Graze
  * Author URI: https://www.nosegraze.com
  * License: GPL2
- * 
- * @package ng-colour-code-status
+ *
+ * @package   ng-colour-code-status
  * @copyright Copyright (c) 2016, Nose Graze Ltd.
- * @license GPL2+
+ * @license   GPL2+
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License, version 2, as
@@ -33,6 +33,12 @@
  * @return void
  */
 function ng_colour_code_post_status() {
+	$current_screen = get_current_screen();
+
+	if ( 'edit' != $current_screen->base ) {
+		return;
+	}
+
 	?>
 	<style>
 		.status-draft {
